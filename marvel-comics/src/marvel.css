@@ -1,0 +1,31 @@
+/* App.css */
+.app {
+    text-align: center;
+  }
+  
+  .character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .character-list div {
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .character-list div:hover {
+    transform: scale(1.05);
+  }
+  
+  .character-list img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .character-detail {
+    margin-top: 20px;
+  }
