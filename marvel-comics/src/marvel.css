@@ -1,31 +1,38 @@
 /* App.css */
 .app {
-    text-align: center;
-  }
-  
-  .character-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .character-list div {
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  
-  .character-list div:hover {
-    transform: scale(1.05);
-  }
-  
-  .character-list img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .character-detail {
-    margin-top: 20px;
-  }
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.name {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.character-detail {
+  margin-top: 20px;
+}
